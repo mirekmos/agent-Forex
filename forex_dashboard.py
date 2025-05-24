@@ -36,6 +36,7 @@ option = st.selectbox(
         "Kalendarz ekonomiczny z lokalnego API",
         "Pełna analiza z lokalnego API",
         "Wizualizacja danych (HTML)"
+	"COT Cross Analysis" 
     ]
 )
 
@@ -67,6 +68,10 @@ if st.button("Wyślij zapytanie"):
     elif option == "Pełna analiza z lokalnego API":
         res = post_api("full_api_analysis", {"instrument": instrument})
         st.json(res)
+    elif option == "COT Cross Analysis":
+        res = post_api("cot_cross_analysis", {"instrument": instrument})
+       st.json(res)
+
     elif option == "Wizualizacja danych (HTML)":
         data_type = st.selectbox(
             "Wybierz rodzaj wizualizacji",
