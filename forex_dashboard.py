@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # === KONFIGURACJA: wstaw swój prawdziwy adres agenta SmythOS! ===
-BASE_URL = "https://TWOJ_AGENT_ID.agent.pa.smyth.ai/api"
+BASE_URL = "https://cmb1xcdes0ucjjum7a2fnjt80.agent.a.smyth.ai/api"
 
 # --- Funkcje pomocnicze ---
 def post_api(endpoint, payload):
